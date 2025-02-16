@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Business promotion</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@500&family=Inter:opsz,wght@500;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Roboto:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-  <header>
-    <a href="./index.html">
-      <img src="./images/logo.svg" alt="logo" width="40" height="36">
-      Product
-    </a>
-
-    <nav>
-      <ul>
-        <li><a href="./index.html">Product</a></li>
-        <li><a href="./pricing.html">Pricing</a></li>
-        <li><a href="./customers.html">Customers</a></li>
-        <li><a href="">Resources</a></li>
+  <header class="header">
+    <div class="container header-container">
+      <a href="./index.html" class="logo">
+        <img src="./images/logo.svg" alt="logo" width="40" height="36">
+        Product
+      </a>
+      <nav class="header-nav">
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a class="header-nav-link current" href="./index.html">Product</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="./pricing.html">Pricing</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="./customers.html">Customers</a></li>
+          <li class="header-nav-item"><a class="header-nav-link" href="">Resources</a></li>
+        </ul>
+      </nav>
+      <ul class="header-btn-list">
+        <li><button class="header-btn" type="button">Sign In</button></li>
+        <li><button class="header-btn" type="button">Sign Up</button></li>
       </ul>
-    </nav>
-
-    <ul>
-      <li><button type="button">Sign In</button></li>
-      <li><button type="button">Sign Up</button></li>
-    </ul>
+    </div>
   </header>
 
   <main>
-    <section>
-      <h1>Work at the speed of thought</h1>
-      <p>Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.</p>
-      <ul>
-        <li><button type="button">Get started</button></li>
-        <li><button type="button">Watch the Video</button></li>
-      </ul>
-      <img src="./images/hero-img.svg" alt="hero image" width="610" height="555">
+    <section class="hero">
+      <div class="container">
+        <div>
+          <h1 class="hero-title">Work at the speed of thought</h1>
+          <p class="hero-text">Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next
+            user experience.</p>
+          <ul class="hero-list">
+            <li><button class="hero-start-btn" type="button">Get started</button></li>
+            <li><button class="hero-video-btn" type="button">Watch the Video</button></li>
+          </ul>
+        </div>
+        <img src="./images/hero-img.svg" alt="hero image" width="610" height="555">
+      </div>
     </section>
   </main>
 
   <footer></footer>
-  
+
 </body>
+
 </html>
